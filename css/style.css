@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #f9f9f9;
+}
+
 h1 {
     margin: 30px;
     text-align: center;
@@ -22,7 +26,8 @@ h2 {
     margin: 0 auto;
 }
 
-.container p {
+.container h2 {
+    text-align: left;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
