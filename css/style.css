@@ -19,6 +19,7 @@ h1 {
 h2 {
     text-align: center;
     color: #333;
+    margin: 0 0 100px 0;
 }
 
 .container {
@@ -26,24 +27,38 @@ h2 {
     margin: 0 auto;
 }
 
-.container h2 {
-    text-align: left;
+.container ul {
+    display: flex;
+    gap: 60px;
+}
+
+.container .txt {
+    display: flex;
+    align-items: center;
     font-weight: 700;
-    margin: 0 0 10px 0;
+}
+
+.container li {
+    position: relative;
 }
 
 .container a {
     display: block;
     width: 300px;
     text-align: center;
-    line-height: 50px;
-    border-radius: 10px;
+    line-height: 40px;
     background: #000;
     color: #FFF;
+    border-radius: 10px;
 }
 
-.container a:hover {
-    background: #aaa;
-    color: #000;
-    transition: 0.5s;
+.container a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #000;
+    transform: translate(-50%, -50%);
 }
