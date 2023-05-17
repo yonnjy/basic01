@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<br lang="ko">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>요소의 가로배치 flex</title>
+    <title>float</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/layout01.css">
+    <link rel="stylesheet" href="../css/layout02.css">
 </head>
 
 <body>
-    <h1 class="tit">요소의 가로배치 flex <i class="xi-close"></i></h1>
-    <!-- 가로배치 기본 스트레치된다 -->
-    <h2>case01</h2>
-    <div class="container case01">
+    <h1 class="tit">float: 요소를 가로배치하는 옛날 방법</h1>
+    <h2>case01 - float 기본 가로배치</h2>
+    <div class="case01 container clearfix">
+        <div class="itm">01</div>
+        <div class="itm">02</div>
+        <!-- <p style="clear: both;"></p> -->
+    </div>
+    <h2>case02 - float 오른쪽 배치</h2>
+    <div class="case02 container clearfix">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
-    <!-- 양끝으로 배치01 -->
-    <h2>case02</h2>
-    <div class="container case02">
+    <h2>case03 - inline-block 가운데 배치</h2>
+    <div class="case03 container">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
-    <!-- 양끝으로 배치02 -->
-    <h2>case03</h2>
-    <div class="container case03">
-        <div class="itm">01</div>
-        <div class="itm right">02</div>
-        <div class="itm right2">03</div>
-    </div>
-    <h2>case04</h2>
-    <div class="container case04">
-        <div class="itm">01</div>
-        <div class="itm right">02</div>
-        <div class="itm right2">03</div>
+    <h2 class="stitle">case04 - float 양쪽 끝 배치 <i class="xi-arrow-right"></i></h2>
+    <div class="case04 container clearfix">
+        <div class="itm left">01</div>
+        <div class="right">
+            <div class="itm">02</div>
+            <div class="itm s">03</div>
+        </div>
     </div>
 
     <h2>실습 예시 01</h2>
     <div class="top_bar">
-        <div class="inner">
+        <div class="inner clearfix">
             <div class="slogan">Lorem ipsum dolor sit amet consectetur.</div>
             <ul class="customer">
                 <li>Q&A</li>
@@ -50,21 +49,20 @@
             </ul>
         </div>
     </div>
-    <!-- 헤더이름: 헤더 -->
     <header id="header">
-        <div class="inner">
-            <!-- 보통 a태그로 링크 같이 들어감 -->
+        <div class="inner clearfix">
             <h1>LOGO</h1>
-            <!-- 내비이름: 글로벌네비게이션바 -->
-            <nav class="gnb">
-                <ul>
-                    <li><a href="">menu01</a></li>
-                    <li><a href="">menu02</a></li>
-                    <li><a href="">menu03</a></li>
-                    <li><a href="">menu04</a></li>
-                </ul>
-            </nav>
-            <div class="right">1234-5678</div>
+            <div class="service">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="">menu01</a></li>
+                        <li><a href="">menu02</a></li>
+                        <li><a href="">menu03</a></li>
+                        <li><a href="">menu04</a></li>
+                    </ul>
+                </nav>
+                <div class="right">1234-5678</div>
+            </div>
         </div>
     </header>
     <section id="event">

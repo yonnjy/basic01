@@ -1,4 +1,4 @@
-h1 {
+h1.tit {
     margin: 50px;
     font-size: 30px;
     font-weight: 700;
@@ -47,6 +47,13 @@ h2 {
 
 .case03 .right2 {
     margin: 0 0 0 100px;
+}
+
+.case04 {
+    display: flex;
+    /* justify-content: flex-end 오른쪽 정렬; */
+    justify-content: center;
+    gap: 30px;
 }
 
 /* 여기부터 실습 예시 01 */
@@ -125,4 +132,41 @@ h2 {
     color: tomato;
     font-size: 30px;
     font-weight: 700;
+}
+
+#event {
+    padding: 100px 0;
+}
+
+#event h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#event .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#event .inner figure {
+    flex: 1;
+    /* 사이즈 크기별로 나누지말고 똑같이해라 */
+}
+
+#event .inner figure img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
 }

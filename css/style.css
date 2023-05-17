@@ -7,19 +7,28 @@ a {
     text-decoration: none;
 }
 
-body {
-    background: #f9f9f9;
-}
-
 h1 {
     margin: 30px;
     text-align: center;
 }
 
 h2 {
-    text-align: center;
+    color: #555;
+}
+
+.tit {
     color: #333;
-    margin: 0 0 100px 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.tit::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+    background: #aaa;
 }
 
 .container {
@@ -27,38 +36,35 @@ h2 {
     margin: 0 auto;
 }
 
-.container ul {
-    display: flex;
-    gap: 60px;
+.container .con1 {
+    border-bottom: 1px solid #ddd;
 }
 
-.container .txt {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-}
-
-.container li {
-    position: relative;
-}
-
-.container a {
+.container .con1 li a {
     display: block;
-    width: 300px;
-    text-align: center;
-    line-height: 40px;
-    background: #000;
-    color: #FFF;
+    border: 1px solid #f9f9f9;
+    padding: 16px 10px;
     border-radius: 10px;
 }
 
-.container a::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 40px;
-    height: 3px;
-    background: #000;
-    transform: translate(-50%, -50%);
+.container .con2 {
+    border-bottom: 1px solid #ddd;
+}
+
+.container .con2 li a {
+    display: block;
+    border: 1px solid #f9f9f9;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+
+.container .con3 {
+    border-bottom: 1px solid #ddd;
+}
+
+.container .con3 li a {
+    display: block;
+    border: 1px solid #f9f9f9;
+    padding: 16px 10px;
+    border-radius: 10px;
 }
