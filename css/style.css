@@ -36,35 +36,13 @@ h2 {
     margin: 0 auto;
 }
 
-.container .con1 {
+.container .con {
     border-bottom: 1px solid #ddd;
 }
 
-.container .con1 li a {
+.container .con li a {
     display: block;
-    border: 1px solid #f9f9f9;
-    padding: 16px 10px;
-    border-radius: 10px;
-}
-
-.container .con2 {
-    border-bottom: 1px solid #ddd;
-}
-
-.container .con2 li a {
-    display: block;
-    border: 1px solid #f9f9f9;
-    padding: 16px 10px;
-    border-radius: 10px;
-}
-
-.container .con3 {
-    border-bottom: 1px solid #ddd;
-}
-
-.container .con3 li a {
-    display: block;
-    border: 1px solid #f9f9f9;
+    border: 1px solid #ddd;
     padding: 16px 10px;
     border-radius: 10px;
 }

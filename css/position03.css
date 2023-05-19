@@ -1,0 +1,114 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top_banner {
+    position: fixed;
+    top: 0;
+    /* left0 right0은 양 끝으로 땡김 */
+    left: 0;
+    right: 0;
+    background: green;
+}
+
+.top_banner .inner {
+    height: 150px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.top_banner.on .inner {
+    height: 0;
+}
+
+.top_banner .btn::after {
+    content: '올리시오';
+}
+
+.top_banner.on .btn::after {
+    content: '내리시오';
+}
+
+.top_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.top_banner .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-100%, 100%);
+    background: green;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 0 0 600px;
+}
+
+.right_banner {
+    /* fixed는 밖으로 나가도 스크롤바가 안생깁니다 */
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    /* transform: translate(0, -50%); */
+    width: 300px;
+    height: 400px;
+    background: darkgreen;
+    transition: 0.5s;
+}
+
+.right_banner.on {
+    right: 0;
+}
+
+.right_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.right_banner .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+}
+
+.right_banner .btn i {
+    padding: 10px;
+    color: #fff;
+    background: darkgreen;
+    font-size: 20px;
+}
+
+.left_banner {
+    position: fixed;
+    top: 50%;
+    left: -50px;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 500px;
+    background: yellowgreen;
+    transition: 0.5s;
+}
+
+.left_banner.on {
+    left: 0;
+}
+
+.left_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.left_banner .btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.left_banner .btn i {
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    background: yellowgreen;
+}
