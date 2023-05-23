@@ -1,0 +1,48 @@
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tit {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #f9f9f9;
+}
+
+.container .con {
+    border-bottom: 1px solid #ddd;
+}
+
+.container .con li a {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 16px 0 16px 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.container .con li:hover a {
+    color: #fff;
+    background: #333;
+}
