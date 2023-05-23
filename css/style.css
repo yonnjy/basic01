@@ -8,7 +8,7 @@ a {
 }
 
 h1 {
-    margin: 30px;
+    padding: 50px 0 0 0;
     text-align: center;
 }
 
@@ -16,24 +16,18 @@ h2 {
     color: #555;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .tit {
     color: #333;
     font-size: 16px;
     font-weight: 500;
-    padding: 5px 0;
-}
-
-.tit::after {
-    content: "";
-    display: block;
-    width: 130px;
-    height: 3px;
-    background: #aaa;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
+    padding: 0 0 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #f9f9f9;
 }
 
 .container .con {
@@ -43,6 +37,12 @@ h2 {
 .container .con li a {
     display: block;
     border: 1px solid #ddd;
-    padding: 16px 10px;
+    padding: 16px 0 16px 20px;
     border-radius: 10px;
+    transition: 0.2s;
+}
+
+.container .con li:hover a {
+    color: #fff;
+    background: #333;
 }
