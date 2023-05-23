@@ -1,0 +1,182 @@
+h1.tit {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: green;
+} */
+
+.itm {
+    background: greenyellow;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.bg {
+    background: #f9f9f9;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 텍스트 넣기 */
+.sc01 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc01 h3::before {
+    content: '앞';
+    margin: 0 100px 0 0;
+}
+
+.sc01 h3::after {
+    content: '뒤';
+}
+
+/* 박스 만들기 */
+.sc02 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc02 h3::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: tomato;
+    margin: 30px auto;
+}
+
+.sc02 h3::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: tomato;
+    /*
+    01_마지막 박스는 마진x
+    02_안에있는 박스끼리 떨어질땐 아래로만
+    03_제일 큰 박스는 패딩으로
+    */
+    margin: 30px auto;
+}
+
+.sc03 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc03 h3::before {
+    content: '';
+    display: inline-block;
+    /* 상하 조절 */
+    vertical-align: 9px;
+    width: 100px;
+    height: 2px;
+    /* 좌우 조절 */
+    margin: 0 10px;
+    background: tomato;
+}
+
+.sc03 h3::after {
+    content: '';
+    display: inline-block;
+    vertical-align: 9px;
+    width: 100px;
+    height: 2px;
+    margin: 0 10px;
+    background: tomato;
+}
+
+.sc04 h3 {
+    display: flex;
+    /* justify-content: center; .sc03처럼할때 */
+    align-items: center;
+    /* 선이랑 글 사이여백 조절 */
+    gap: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc04 h3::before {
+    content: '';
+    display: block;
+    flex: 1;
+    /* width: 100px; .sc03처럼할때 */
+    height: 2px;
+    background: tomato;
+}
+
+.sc04 h3::after {
+    content: '';
+    display: block;
+    flex: 1;
+    /* width: 100px; .sc03처럼할때 */
+    height: 2px;
+    background: tomato;
+}
+
+/* 아이콘 만들기 */
+.sc05 .dot {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 1.4;
+}
+
+.sc05 .dot>li {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+.sc05 .dot>li::before {
+    content: '\e921';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    /* \e921은 f12에서 확인할수있더라 xeicon은 외워 */
+    font-family: xeicon;
+    font-size: 3px;
+    color: tomato;
+}
+
+/* 이미지 넣기 */
+.sc06 .img {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 1.4;
+}
+
+.sc06 .img::before {}
