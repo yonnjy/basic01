@@ -90,6 +90,7 @@ video {
     box-sizing: border-box;
 }
 
+/* 이거없으면 border가 삐져나간다구 */
 *::before,
 *::after {
     box-sizing: border-box;
@@ -122,6 +123,11 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
 }
 
 blockquote,

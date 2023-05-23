@@ -1,0 +1,291 @@
+h1.tit {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.sec {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: green;
+}
+
+.itm {
+    background: rgb(100, 130, 100);
+}
+
+.case01 {
+    position: relative;
+}
+
+.case01 .itm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* inset 50% auto auto 50%*/
+    transform: translate(-50%, -50%);
+}
+
+.case02 {
+    position: relative;
+}
+
+.case02 .itm {
+    position: absolute;
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case03 {
+    position: relative;
+}
+
+.case03 .itm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -600px;
+    transform: translate(0, -50%);
+}
+
+.case04 {
+    position: relative;
+}
+
+.case04 .itm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, -50%);
+}
+
+.event {
+    background: rgb(100, 130, 100);
+}
+
+.event .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.event .con {
+    /* 나중에 뭐 해볼꺼래 */
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.event .con figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.event .con figure:hover .btn {
+    bottom: 30px;
+}
+
+.event .con figure .btn {
+    position: absolute;
+    right: 30px;
+    bottom: -50px;
+    transition: 0.5s;
+}
+
+.event .con figure .btn i {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+/* 실습예시 02 */
+
+.content {
+    background: #fff;
+}
+
+.content .con {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content .con figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content figure .cover {
+    display: flex;
+    /* 가로로 나열 후 column세로로 정렬 */
+    flex-direction: column;
+    position: absolute;
+    inset: 0 auto auto 100%;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+    /* opacity: 0.8;
+    background: rgb(0, 0, 255); */
+    background: rgba(0, 0, 255, 0.8);
+    color: #fff;
+    transition: 0.8s;
+}
+
+.content figure:hover .cover {
+    inset: 0 auto auto 0;
+}
+
+.content .cover h3 {
+    margin: 0 0 10px 0;
+}
+
+.content .cover a {
+    margin: auto 0 0 0;
+    background: #333;
+    /* padding줄꺼니까 flex 스트레치된걸 원상복구 해줘. */
+    padding: 5px 10px;
+    align-self: flex-start;
+}
+
+.customer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.customer .list {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* 마지막 박스에는 m안주는데 고치기 힘드니까 봐주쇼 */
+    margin: 0 0 10px 0;
+    padding: 0 30px;
+    background: #fff;
+}
+
+/* .customer .list~.list { 난빼줄꺼야 하면 이런식으로
+    margin: 10px 0 0 0;
+} */
+
+.customer .list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 1px solid #0c4ca3;
+    border-left: 1px solid #0c4ca3;
+    /* 뭐없애라는 명령중 하나래 */
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.customer .list::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid #0c4ca3;
+    border-right: 1px solid #0c4ca3;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.customer .list:hover::before {
+    width: 100%;
+    /* h가 position줄때 잘먹어 */
+    height: 100%;
+    visibility: visible;
+}
+
+.customer .list:hover::after {
+    width: 100%;
+    /* h가 position줄때 잘먹어 */
+    height: 100%;
+    visibility: visible;
+}
+
+.customer .list h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+/*  */
+
+.customer .nav {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 15px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+}
+
+.customer .nav>li {
+    flex: 1;
+}
+
+.customer .nav>li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #0c4ca3;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.customer .nav>li:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #0c4ca3;
+}
+
+
+.customer .nav>li a {
+    /* 내용 가운데 정렬 옛날방식 */
+    display: block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.customer .nav>li~li {
+    border-left: 1px solid #ddd;
+}
