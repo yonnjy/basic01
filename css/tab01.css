@@ -1,0 +1,253 @@
+#tab_block {
+    padding: 100px 0;
+}
+
+.inner,
+.tit {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#tab_block .tit {
+    margin: 0 auto 30px auto;
+}
+
+/* 테이블 때문인가 화면 작아지면 바 생겨 */
+#tab_block .inner {
+    width: 500px;
+}
+
+#tab_block .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.tab_link {
+    /* display: flex; */
+    /* https://www.biew.co.kr/ table 여기참고 */
+    display: table;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.tab_link>*~* {
+    border-left: 2px solid #fff;
+}
+
+.tab_link>li {
+    /* flex: 1; */
+    display: table-cell;
+    color: #fff;
+    background: #333;
+}
+
+.tab_link>li.on {
+    background: tomato;
+}
+
+.tab_link>li>a {
+    display: block;
+    padding: 10px 20px;
+}
+
+/* .tab_content .con {
+    display: none;
+}
+
+.tab_content .con.on {
+    display: block;
+} */
+
+.tab_content .con {
+    height: 100px;
+    background: #f9f9f9;
+}
+
+.tab_content .con {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.tab_content .con.on {
+    visibility: visible;
+    height: auto;
+}
+
+
+/* map */
+
+#tab_position {
+    position: relative;
+}
+
+#tab_position .sun {
+    position: absolute;
+    top: -100px;
+    right: 300px;
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    /* 옛날방식 텍스트 가운데로 */
+    text-align: center;
+    line-height: 100px;
+    /* 베지에 곡선 */
+    animation: sun 5s infinite linear;
+}
+
+@keyframes sun {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#tab_position .sun::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -50%);
+    width: 30px;
+    height: 8px;
+    /* 높이의 반만 */
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100px, -50%);
+    width: 30px;
+    height: 8px;
+    /* 높이의 반만 */
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70px);
+    width: 8px;
+    height: 30px;
+    /* 높이의 반만 */
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    width: 8px;
+    height: 30px;
+    /* 높이의 반만 */
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .tab_img {
+    position: relative;
+    width: 1000px;
+}
+
+#tab_position .tab_img img {
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+}
+
+#tab_position .tab_map_location {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+#tab_position .inner {
+    display: flex;
+    align-items: center;
+}
+
+#tab_position .tab_map_location li {
+    position: absolute;
+    display: none;
+    font-size: 0;
+}
+
+#tab_position .tab_map_location li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-right: 10px solid tomato;
+    border-bottom: 10px solid tomato;
+    transform: rotate(45deg) translate(0, -10%);
+    opacity: 0;
+}
+
+#tab_position .tab_map_location li.on::after {
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-100%, -100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-100%, -100%);
+    }
+}
+
+#tab_position .tab_map_location li.on {
+    display: block;
+}
+
+#tab_position .tab_map_location li:nth-child(1) {
+    top: 21%;
+    left: 37%;
+}
+
+#tab_position .tab_map_location li:nth-child(2) {
+    top: 22%;
+    left: 30%;
+}
+
+#tab_position .tab_map_location li:nth-child(3) {
+    top: 51%;
+    left: 61%;
+}
+
+#tab_position .tab_map_location li:nth-child(4) {
+    top: 64%;
+    left: 68%;
+}
+
+#tab_position .tab_map_location li:nth-child(5) {
+    top: 65%;
+    left: 36%;
+}
