@@ -1,0 +1,42 @@
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .sub {
+    /* none block은 애니메이션이 안먹어 */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+}
+
+#header .gnb:hover>ul>li .sub {
+    height: 200px;
+}
+
+#header .gnb>ul>li .sub>li:hover {
+    color: tomato;
+}
+
+#header .gnb::before {
+    content: '';
+    position: absolute;
+    top: 101px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    height: 0;
+    background: #fff;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+#header .gnb:hover::before {
+    height: 200px;
+}

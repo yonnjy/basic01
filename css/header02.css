@@ -1,0 +1,110 @@
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .sub {
+    /* 원래 p d순서, 없애는게 중요하니까 d p순서로 적음 */
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    background: #fff;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ddd;
+}
+
+#header .gnb>ul>li:hover .sub {
+    display: block;
+}
+
+#header .sub li~li {
+    border-top: 1px solid #ddd;
+}
+
+.mopen {
+    display: none;
+}
+
+/* if같은거임 화면이 768이하로 작아지면 */
+@media(max-width:768px) {
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        line-height: 1;
+        /* 없어도 되는데 일단 넣음 */
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .mopen i {
+        font-size: 20px;
+        padding: 5px;
+        background: #ccc;
+        border-radius: 3px;
+    }
+
+    #header.on h1 {
+        position: fixed;
+        padding: 0 30px;
+        z-index: 1000;
+    }
+
+    #header .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding: 100px 15px;
+        width: calc(100% - 90px);
+        height: 100vh;
+        background: #f9f9f9;
+        z-index: 999;
+    }
+
+    #header .gnb.on {
+        left: 0;
+    }
+
+    #header .gnb>ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #header .gnb>ul>li {
+        position: relative;
+    }
+
+    #header .gnb>ul>li>a {
+        line-height: 40px;
+        background: #ccc;
+    }
+
+    #header .sub {
+        display: none;
+        position: static;
+        width: auto;
+        transform: translate(0, 0);
+        text-align: left;
+        background: #f9f9f9;
+        line-height: 40px;
+        border: none;
+        z-index: 999;
+    }
+
+    #header .gnb>ul>li:hover .sub {
+        display: none;
+    }
+
+    #header .gnb>ul>li.on .sub {
+        display: block;
+    }
+
+    #header .sub li~li {
+        border-top: 1px solid #ddd;
+    }
+}
