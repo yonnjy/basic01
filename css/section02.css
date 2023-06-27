@@ -1,0 +1,127 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* mainContent1 */
+#mainContent1 .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent1 .inner figure {
+    /* 그냥 가로로 나열할때 */
+    /* width: 50%; */
+
+    /* 어 이거 4개뭉탱이 통째로 반응형할때 괜찮을듯 */
+    flex: 1 0 50%;
+
+    /* px로 주면 반응형에서 1개씩 밑으로 나열되는 형태로 바뀜 근데 계산해야함 */
+    /* flex: 1 0 400px; */
+}
+
+#mainContent1 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
+
+@media (max-width: 768px) {
+    #mainContent1 .inner {
+        /* 세로로 나와라 */
+        flex-direction: column;
+    }
+
+    #mainContent1 .inner figure:nth-child(2) {
+        /* 순서를 바꾸겠다 */
+        order: -1;
+    }
+}
+
+/* #mainContent2 */
+#mainContent2 .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* 위에랑 같은 말임 */
+    /* grid-template-columns: repeat(2, 1fr); */
+
+    /* @media 안쓰고 반응형 만들때 근데 px계산때매 머리아플수있음 */
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+}
+
+#mainContent2 .inner figure:nth-child(2) {
+    border: 1px solid #369;
+}
+
+/* @media (max-width: 768px) {
+    #mainContent2 .inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* #mainContent3 */
+#mainContent3 .inner figure {
+    float: left;
+    width: 50%;
+    height: 272px;
+}
+
+/*
+    html에 클래스로 줬어 clearfix
+    #mainContent3 .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+#mainContent3 .inner figure:nth-child(2) {
+    border: 1px solid rgb(255, 0, 255);
+}

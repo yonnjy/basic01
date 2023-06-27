@@ -1,0 +1,116 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.sec .tit {
+    margin: 0 auto 30px auto;
+}
+
+.sec .tit h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sec .tit p {
+    font-size: 15px;
+    /* 낱말에따라 어쩌구랬어 */
+    word-break: keep-all;
+    line-height: 19px;
+}
+
+body {
+    /* 스크롤바 나오게 */
+    min-height: 150vh;
+}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 50px;
+    height: 100px;
+    line-height: 100px;
+    /* align-items: center; */
+}
+
+#header a {
+    display: block;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* main */
+
+#main_visual {
+    position: relative;
+    height: 600px;
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+#main_visual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#main_visual .slogan h2 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+
+}
+
+#main_visual .slogan p {
+    font-size: 15px;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+}
+
+/* 올라가욥 */
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.to_top i {
+    background: tomato;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#footer {
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}

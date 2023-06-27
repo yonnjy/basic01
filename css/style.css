@@ -55,12 +55,16 @@ hr::before {
     border-bottom: 1px solid #ddd;
 }
 
+.container .con li~li {
+    margin: 5px 0 0 0;
+}
+
 .container .con li a {
     display: block;
     border: 1px solid #ddd;
     padding: 16px 0 16px 20px;
-    border-radius: 10px;
-    transition: 0.2s;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
 .container .con li:hover a {
