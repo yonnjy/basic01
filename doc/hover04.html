@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover04</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/hover04.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/basic.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="inner">
+                <h1>
+                    <a href="#!">
+                        <img src="../images/grafflogo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">menu01</a></li>
+                        <li><a href="#!">menu02</a></li>
+                        <li><a href="#!">menu03</a></li>
+                        <li><a href="#!">menu04</a></li>
+                        <li><a href="#!">menu05</a></li>
+                    </ul>
+                </nav>
+                <div class="service">
+                    <i class="xi-cart-o">
+                        <small>0</small>
+                    </i>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <section id="hover01" class="sec">
+                <div class="tit">
+                    <h2>Lorem ipsum dolor sit. <i class="xi-heart"></i></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odio pariatur ullam esse nulla!</p>
+                </div>
+                <div class="inner">
+                    <figure class="itm">
+                        <div class="img_box">
+                            <img src="../images/lesedilarona01.jpg" alt="">
+                            <div class="lnk">
+                                <a href=""><i class="xi-plus"> 자세히보기</i></a>
+                            </div>
+                            <!-- <div class="box" aria-hidden=""></div> 빈박스니까 읽지못하게 -->
+                        </div>
+                        <strong>Lorem, ipsum.</strong>
+                        <p>01 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, reprehenderit?</p>
+                    </figure>
+                    <figure class="itm">
+                        <div class="img_box">
+                            <img src="../images/lesedilarona02.jpg" alt="">
+                            <div class="lnk">
+                                <a href=""><i class="xi-plus"> 자세히보기</i></a>
+                            </div>
+                        </div>
+                        <strong>Lorem, ipsum.</strong>
+                        <p>02 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, reprehenderit?</p>
+                    </figure>
+                    <figure class="itm">
+                        <div class="img_box">
+                            <img src="../images/lesedilarona03.jpg" alt="">
+                            <div class="lnk">
+                                <a href=""><i class="xi-plus"> 자세히보기</i></a>
+                            </div>
+                        </div>
+                        <strong>Lorem, ipsum.</strong>
+                        <p>03 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, reprehenderit?</p>
+                    </figure>
+                    <figure class="itm">
+                        <div class="img_box">
+                            <img src="../images/lesedilarona04.jpg" alt="">
+                            <div class="lnk">
+                                <a href=""><i class="xi-plus"> 자세히보기</i></a>
+                            </div>
+                        </div>
+                        <strong>Lorem, ipsum.</strong>
+                        <p>04 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, reprehenderit?</p>
+                    </figure>
+                    <figure class="itm">
+                        <div class="img_box">
+                            <img src="../images/lesedilarona05.jpg" alt="">
+                            <div class="lnk">
+                                <a href=""><i class="xi-plus"> 자세히보기</i></a>
+                            </div>
+                        </div>
+                        <strong>Lorem, ipsum.</strong>
+                        <p>05 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, reprehenderit?</p>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <div class="inner">
+                &copy; YoonJaeYeong.
+            </div>
+        </footer>
+        <div class="to_top">
+            <i class="xi-arrow-up"></i>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.lnk .wish').on('click', function(e){
+                e.preventDefault();
+                $(this).toggleClass('on');
+            });
+
+            let cartNum = 0;
+
+            $('.lnk .cart').on('click', function(e){
+                e.preventDefault();
+
+                if($(this).hasClass('on')) {
+                    alert('이미 장바구니에 담은 상품 입니다.');
+                    return;
+                } else {
+                    cartNrm = cartNum + 1;
+                }
+                cartNum = cartNum + 1;
+                console.log(cartNum);
+                $('#header .service i small').text(cartNum);
+            });
+        });
+    </script>
+</body>
+
+</html>
