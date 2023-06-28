@@ -52,7 +52,7 @@ hr::before {
 }
 
 .container .con {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px dashed #eee;
 }
 
 .container .con li~li {
