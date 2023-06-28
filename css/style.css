@@ -55,6 +55,10 @@ hr::before {
     border-bottom: 1px dashed #eee;
 }
 
+.container .con ul {
+    padding: 0 15px;
+}
+
 .container .con li~li {
     margin: 5px 0 0 0;
 }
@@ -62,7 +66,7 @@ hr::before {
 .container .con li a {
     display: block;
     border: 1px solid #ddd;
-    padding: 16px 0 16px 20px;
+    padding: 16px 15px;
     border-radius: 5px;
     transition: 0.5s;
 }
