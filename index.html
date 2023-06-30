@@ -1,262 +1,166 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반응형 기본 세팅</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <!-- 모바일 환경을 위한 css 새로고침 버전 관리 -->
-    <link rel="stylesheet" href="./css/style.css?ver=1.0">
-    <link rel="stylesheet" href="./css/style2.css?ver=1.0">
-
-    <script src="./js/swiper-bundle.min.js"></script>
-    <!-- defer: jquery 초기화 -->
-    <script src="./js/custom.js?ver=1.0" defer></script>
+    <title>html basic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
 </head>
 
 <body>
-    <div class="wrap">
-        <header id="Header">
-            <div class="inner">
-                <h1>
-                    <a href="/">
-                        <img src="./images/grafflogo.png" alt="">
-                    </a>
-                </h1>
-                <nav id="gnb">
-                    <ul class="dp1">
-                        <li><a href="">menu01</a></li>
-                        <li><a href="">menu02</a></li>
-                        <li><a href="">menu03</a></li>
-                        <li><a href="">menu04</a></li>
-                        <li><a href="">menu05</a></li>
-                    </ul>
-                </nav>
-                <div class="mobile_btn">
-                    <i class="xi-bars"></i>
-                </div>
-                <div class="search_area">
-                    <i class="xi-search"></i>
-                </div>
-            </div>
-        </header>
-        <main id="Index">
-            <section id="MainVisual">
-                <h2 class="blind">main visual</h2>
-                <div class="swiper main_slide">
-                    <div class="swiper-wrapper">
-                        <div class="itm itm01 swiper-slide">
-                            <div class="slogan">
-                                <h3>01. Lorem ipsum dolor sit.</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, odit!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="itm itm02 swiper-slide">
-                            <div class="slogan">
-                                <h3>02. Lorem ipsum dolor sit.</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, odit!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="itm itm03 swiper-slide">
-                            <div class="slogan">
-                                <h3>03. Lorem ipsum dolor sit.</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, odit!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrows">
-                    <i class="xi-arrow-left left"></i>
-                    <i class="xi-arrow-right right"></i>
-                </div>
-            </section>
-            <section id="MainContent" class="section">
-                <div class="title">
-                    <h2>Lorem ipsum dolor sit.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, enim.</p>
-                </div>
-                <div class="inner">
-                    <figure>
-                        <div class="img_box">
-                            <img src="./images/lesedilarona01.jpg" alt="">
-                        </div>
-                        <figcaption>
-                            <strong>Lorem, ipsum dolor.</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="img_box">
-                            <img src="./images/lesedilarona02.jpg" alt="">
-                        </div>
-                        <figcaption>
-                            <strong>Lorem, ipsum dolor.</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="img_box">
-                            <img src="./images/lesedilarona03.jpg" alt="">
-                        </div>
-                        <figcaption>
-                            <strong>Lorem, ipsum dolor.</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="img_box">
-                            <img src="./images/lesedilarona04.jpg" alt="">
-                        </div>
-                        <figcaption>
-                            <strong>Lorem, ipsum dolor.</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
-            <section id="MainEvent" class="section">
-                <h2 class="blind">Lorem ipsum dolor sit.</h2>
-                <div class="inner">
-                    <div class="swiper pro_slide">
-                        <div class="swiper-wrapper">
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona01.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona02.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona03.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona04.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona05.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona06.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona06.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona06.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/lesedilarona06.jpg" alt="">
-                                    </div>
-                                    <figcaption>
-                                        <strong>Lorem, ipsum dolor.</strong>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates.
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sbar"></div>
-                <!-- <div class="drag"></div> -->
-            </section>
-        </main>
-        <footer id="Footer" class="section">
-            <div class="inner">
-                <h2>
-                    <img src="./images/grafflogo.png" alt="">
-                </h2>
-                <address>
-                    <div class="ft_top">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla deleniti autem exercitationem
-                        cum ea sequi ratione nobis, recusandae neque asperiores!
-                    </div>
-                    <div class="ft_bottom">
-                        &copy; lorem inc. allrights reserved.
-                    </div>
-                </address>
-            </div>
-        </footer>
+    <div class="container">
+        <h1>html basic</h1>
+        <h2 class="tit">기록하는 사람: 재영</h2>
+        <hr>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> 기본 실습 layout</h2>
+            <ul>
+                <li><a href="./doc/basic.html" target="_blank">기본 실습 layout</a></li>
+                <li><a href="./doc/section01.html" target="_blank">기본 섹션 만들기 : 가로배치 3종세트 박스 3개</a></li>
+                <li><a href="./doc/section02.html" target="_blank">기본 섹션 만들기 : 가로배치 3종세트 박스 4개</a></li>
+                <li><a href="./doc/section03.html" target="_blank">기본 섹션 만들기 : 제품나열</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> background</h2>
+            <ul>
+                <li><a href="./doc/background01.html" target="_blank">23.05.17 - background</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> video</h2>
+            <ul>
+                <li><a href="./doc/video01.html" target="_blank">23.05.24 - 동영상 mp4넣기</a></li>
+                <li><a href="./doc/video02.html" target="_blank">23.05.24 - 유튜브 동영상 넣기</a></li>
+                <li><a href="./doc/video03.html" target="_blank">23.05.24 - 카카오 지도 & 유튜브 동영상</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> display - 요소의 가로배치</h2>
+            <ul>
+                <li><a href="./doc/01_display.html" target="_blank">23.05.16 - display: flex</a></li>
+                <li><a href="./doc/02_display.html" target="_blank">23.05.17 - float</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> STICKY의 활용</h2>
+            <ul>
+                <li><a href="./doc/sticky01.html" target="_blank">23.06.27 - 카뱅에서 본 그거</a></li>
+                <li><a href="./doc/sticky02.html" target="_blank">23.06.27 - 이미지 겹쳐지면서 위로 착착 붙는 그거</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> FLEX의 활용</h2>
+            <ul>
+                <li><a href="./doc/section_detail01.html" target="_blank">23.06.27 - 가로로 이미지만 있다가 누르면 펼쳐지면서 글 나오는 그거</a>
+                </li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> position - 요소의 겹침</h2>
+            <ul>
+                <li><a href="./doc/00_position.html" target="_blank">23.05.22 - 기본</a></li>
+                <li><a href="./doc/01_position.html" target="_blank">23.05.19 - popup</a></li>
+                <li><a href="./doc/02_position.html" target="_blank">23.05.19 - ^v^ v^v</a></li>
+                <li><a href="./doc/03_position.html" target="_blank">23.05.19 - 사방으로 배너 만들기</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> slider - main visual</h2>
+            <ul>
+                <li><a href="./doc/mainVisual01.html" target="_blank">23.05.17 - 메인비주얼 반응형 슬라이드</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> slider - content</h2>
+            <ul>
+                <li><a href="./doc/product01.html" target="_blank">23.05.19 - 제품 슬라이드</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> Tap menu</h2>
+            <ul>
+                <li><a href="./doc/tab01.html" target="_blank">23.05.25 - display: none, block으로 공간을 제어한다.</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> header - layout</h2>
+            <ul>
+                <li><a href="./doc/header_basic01.html" target="_blank">23.06.27 - 기본 header 레이아웃</a></li>
+                <li><a href="./doc/header_basic02.html" target="_blank">23.06.27 - 로고를 가운데로 위치변경</a></li>
+                <li><a href="./doc/header_basic03.html" target="_blank">23.06.27 - sticky</a></li>
+                <li><a href="./doc/header_basic04.html" target="_blank">23.06.27 - fixed</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> header - drop down menu</h2>
+            <ul>
+                <li><a href="./doc/header01.html" target="_blank">23.05.22 - menu 고정 (fixed)</a></li>
+                <li><a href="./doc/header02.html" target="_blank">23.05.26 - menu 한줄에 하나씩+모바일</a></li>
+                <li><a href="./doc/header03.html" target="_blank">23.05.26 - menu 서브 전체 나오게</a></li>
+                <li><a href="./doc/header04.html" target="_blank">23.05.26 - menu 서브 전체 스르륵 나오게</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> 가상요소 - ::before, ::after</h2>
+            <ul>
+                <li><a href="./doc/pseudo-element01.html" target="_blank">23.05.23 - 가상요소</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> 애니메이션</h2>
+            <ul>
+                <li><a href="./doc/slick_main_animation01.html" target="_blank">23.05.23 - 자동차가 스르륵 나와</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> :hover, position 집중적으로 배우기</h2>
+            <ul>
+                <li><a href="./doc/hover01.html" target="_blank">23.06.28 - 쇼핑몰에서 자주보는거</a></li>
+                <li><a href="./doc/hover02.html" target="_blank">23.06.28 - 그라디언트 배경</a></li>
+                <li><a href="./doc/hover03.html" target="_blank">23.06.28 - 그냥 테두리 2줄씩</a></li>
+                <li><a href="./doc/hover04.html" target="_blank">23.06.28 - 그라데이션 테두리 1줄씩</a></li>
+                <li><a href="./doc/hover05.html" target="_blank">23.06.28 - 올라오는 박스(hover), 올라오는 슬라이드(on)</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> sprite 기법</h2>
+            <ul>
+                <li><a href="./doc/sprite01.html" target="_blank">23.06.28 - img잘라서 보이게하기, -margin으로 들어올리기, hover했을때 이미지
+                        바꾸기</a></li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> 수업시간에 만든거</h2>
+            <ul>
+                <li><a href="https://yonnjy.github.io/test01/" target="_blank">GRAFF - 기능없고 모양만</a></li>
+                <li><a href="https://yonnjy.github.io/layout01/" target="_blank">GRAFF - 슬라이드, 제품 3개 간단히</a></li>
+                <li><a href="https://yonnjy.github.io/layout02/" target="_blank">GRAFF - 이것저것 다 있음</a></li>
+                <li><a href="https://yonnjy.github.io/layout03/" target="_blank">깔끔이청소 - 모양만 했음</a></li>
+                <li><a href="https://yonnjy.github.io/layout04/" target="_blank">CASSIA - 독도 테스트용으로 잠깐 했음</a></li>
+                <li><a href="https://yonnjy.github.io/responsive_casia/" target="_blank">깔끔이청소 - 이름이 왜 카시아야...?</a></li>
+                <li><a href="https://yonnjy.github.io/responsive_web_dokdo/" target="_blank">독도전시관 - 반응형이랑 이것저것</a></li>
+                <li><a href="https://yonnjy.github.io/responsive_web_outback" target="_blank">아웃백 - 스와이프랑 반응형 이것저것</a>
+                <li><a href="https://yonnjy.github.io/responsive_basic/" target="_blank">GRAFF - 비주얼 스와이프랑 제품 스와이프</a>
+                </li>
+            </ul>
+        </section>
+        <section class="con">
+            <h2><i class="xi-calendar-list"></i> 과제</h2>
+            <ul>
+                <li><a href="https://yonnjy.github.io/project01/" target="_blank">23.05.00 - A TWOSOME PLACE</a></li>
+                <li><a href="https://yonnjy.github.io/project02/" target="_blank">23.05.19 - 오설록</a></li>
+                <li><a href="https://yonnjy.github.io/project03/" target="_blank">23.05.26 - BENTLEY</a></li>
+                <li><a href="https://yonnjy.github.io/project04/" target="_blank">23.06.02 - POSCO</a></li>
+                <li><a href="https://yonnjy.github.io/project05/" target="_blank">23.06.09 - 동서식품</a></li>
+                <li><a href="https://yonnjy.github.io/project06/" target="_blank">23.06.16 - 정식품</a></li>
+                <li><a href="https://yonnjy.github.io/project07/" target="_blank">23.06.23 - 울산대학교</a></li>
+                <li><a href="https://yonnjy.github.io/project08/" target="_blank">23.06.30 - 삼천당제약</a></li>
+            </ul>
+        </section>
     </div>
 </body>
 
